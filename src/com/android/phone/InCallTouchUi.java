@@ -134,7 +134,7 @@ public class InCallTouchUi extends FrameLayout
         // Look up the various UI elements.
 
         // "Dial-to-answer" widget for incoming calls.
-        mIncomingCallWidget = (SlidingTab) findViewById(R.id.incomingCallWidget);
+        mIncomingCallWidget = (SlidingTab)findViewById(R.id.incomingCallWidget);
         mIncomingCallWidget.setLeftTabResources(
                 R.drawable.ic_jog_dial_answer,
                 com.android.internal.R.drawable.jog_tab_target_green,
