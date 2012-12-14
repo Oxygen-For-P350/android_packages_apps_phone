@@ -131,23 +131,6 @@ public class InCallTouchUi extends FrameLayout
         super.onFinishInflate();
         if (DBG) log("InCallTouchUi onFinishInflate(this = " + this + ")...");
 
-        // Look up the various UI elements.
-
-        // "Dial-to-answer" widget for incoming calls.
-        mIncomingCallWidget = (SlidingTab)findViewById(R.id.incomingCallWidget);
-        mIncomingCallWidget.setLeftTabResources(
-                R.drawable.ic_jog_dial_answer,
-                com.android.internal.R.drawable.jog_tab_target_green,
-                com.android.internal.R.drawable.jog_tab_bar_left_answer,
-                com.android.internal.R.drawable.jog_tab_left_answer
-                );
-        mIncomingCallWidget.setRightTabResources(
-                R.drawable.ic_jog_dial_decline,
-                com.android.internal.R.drawable.jog_tab_target_red,
-                com.android.internal.R.drawable.jog_tab_bar_right_decline,
-                com.android.internal.R.drawable.jog_tab_right_decline
-                );
-
         // For now, we only need to show two states: answer and decline.
         mIncomingCallWidget.setLeftHintText(R.string.slide_to_answer_hint);
         mIncomingCallWidget.setRightHintText(R.string.slide_to_decline_hint);
